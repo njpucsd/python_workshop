@@ -2,6 +2,7 @@
 
 board = []
 playerOneTurn = True
+winner = False
 
 for x in range(0,9) :
     board.append(" ")
@@ -32,11 +33,22 @@ def drawBoard(board):
 
 display_instructions()
 
-if playerOneTurn:
-    print("Player 1:")
-else:
-    print("Player 2:")
+while not winner:
+    if playerOneTurn:
+        print("Player 1:")
+    else:
+        print("Player 2:")
 
-choice = int(input())
+    choice = int(input())
 
-board[choice-1] = "X"
+    if playerOneTurn:
+        board[choice-1] = "X"
+    else:
+        board[choice-1] = "O"
+
+    drawBoard(board)
+
+    playerOneTurn = not playerOneTurn
+
+    
+    
