@@ -3,6 +3,9 @@
 board = []
 playerOneTurn = True
 
+for x in range(0,9) :
+    board.append(" ")
+
 def display_instructions():
     print("""Welcome to Tic-Tac-Toe!
        To play please select a number from 1-9 that corresponds
