@@ -23,7 +23,19 @@ def drawBoard(board):
     print('|' + board[6] + '|' + board[7] + '|' + board[8] + '|')
     print( ' -----\n')
 
-def winner(board):
+#def winner(board):
+    
+#def validMove(choice):
 
-#display_instructions()
+choice = int(input())
 
+display_instructions()
+
+if playerOneTurn:
+    print("Player 1:")
+else:
+    print("Player 2:")
+
+choice = int(input())
+
+board[choice-1] = "X"
