@@ -27,8 +27,6 @@ def drawBoard(board):
     
 #def validMove(choice):
 
-choice = int(input())
-
 display_instructions()
 
 if playerOneTurn:
